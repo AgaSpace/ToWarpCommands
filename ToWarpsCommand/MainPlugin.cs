@@ -1,27 +1,28 @@
 ﻿using System;
 using System.Reflection;
-using Terraria;
-using TerrariaApi.Server;
-using TShockAPI;
-using TShockAPI.Hooks;
-using TShockAPI.DB;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.IO;
+
+using Terraria;
+
+using TerrariaApi.Server;
+
+using TShockAPI;
+using TShockAPI.Hooks;
+using TShockAPI.DB;
+
 using Microsoft.Xna.Framework;
 using MySql.Data.MySqlClient;
-using Terraria;
-using TShockAPI.Hooks;
-using System.IO;
 using Mono.Data.Sqlite;
 
-namespace TZDevelops
+namespace KekDevelops
 {
     [ApiVersion(2, 1)]
     public class ToWarpsCommand : TerrariaPlugin
-	{
-		public override string Author => "Zoom L1 | Colag";
+    {
+	public override string Author => "Zoom L1 | Colag";
         public override string Name => "ToWarpsCommand";
         public ToWarpsCommand(Main game) : base(game) {}
 
